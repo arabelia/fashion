@@ -115,6 +115,16 @@ i{padding:1px;}
 		i{ padding-right:2px; border-right: 1px solid $color-fondo;}
 	}
 }
+#contacto{
+	background-color:$color-fondo;
+	p{font-size:14px;}
+	a{font-size:14px;}
+	span {color: #241E1E;}
+}
+#footer{
+	background-color:#564D55;
+	p{color:#fff;}
+}
 @media (max-width: 768px) {
   	#titulo{
   		text-align: center;

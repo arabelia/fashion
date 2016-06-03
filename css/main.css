@@ -215,6 +215,30 @@ i {
   border-right: 1px solid #E7E7E7;
 }
 
+#contacto {
+  background-color: #E7E7E7;
+}
+
+#contacto p {
+  font-size: 14px;
+}
+
+#contacto a {
+  font-size: 14px;
+}
+
+#contacto span {
+  color: #241E1E;
+}
+
+#footer {
+  background-color: #564D55;
+}
+
+#footer p {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   #titulo {
     text-align: center;
