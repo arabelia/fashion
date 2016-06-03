@@ -1,0 +1,424 @@
+doctype html
+html(lang="en")
+    head
+        title Fashion Accesories
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/font-awesome.min.css")
+
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto" type="text/css")
+
+        link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+        link(rel="stylesheet", href="css/main.css")
+    
+        script(src="js/jquery-1.12.3.min.js")
+        script(src="js/bootstrap.min.js")
+    body
+        .container
+            #menu
+                .contenedor
+                    .row.espaciado1
+                        .col-sm-6.pull-left
+                            h5 Default Welcome Msg!
+                        .col-sm-6
+                            ul.list-menu.list-unstyle.list-inline.pull-right
+                                li
+                                    img(src="images/flag1.png")
+                                    a(href="") Languaje
+                                    i.fa.fa-caret-down
+                                li
+                                    i.fa.fa-usd
+                                    a(href="") Currency
+                                    i.fa.fa-caret-down
+                                li
+                                    i.fa.fa-user
+                                    a(href="") My Account
+                                    i.fa.fa-caret-down
+            #titulo
+                .contenedor
+                    .row.espaciado2.text-center
+                        .col-md-4.espaciado1
+                            .time
+                                i.fa.fa-clock-o.tam-1.enlinea
+                                .enlinea
+                                    p OPENING TIME
+                                    p 9.00 AM - 10.00 PM
+                        .col-md-4
+                            img(src="images/logo.png" class="espaciado1")
+                         .col-md-4.espaciado1
+                            .entrada.borde.pull.right
+                                input(type="text" id="buscar" placeholder="Search")
+                                i.fa.fa-search
+            #submenu
+                .contenedor
+                    .row
+                        .col-sm-9
+                            ul.list-menu.list-unstyle.list-inline
+                                li
+                                    a(href="") HOME
+                                li
+                                     a(href="") CONTACT-US
+                        .col-sm-3.pull-right
+                            .shopping.pull-right
+                                p.fa.fa-shopping-cart.tam-0   My Cart
+                                p 2 item(s) - $244.00 
+            #carrusel
+                .row.portada
+                    .contenedor
+                        .ofertas.pull-right
+                            .row
+                                .col-xs-5
+                                    img(src="images/cart-1.jpg")
+                                .col-xs-7
+                                    p Aliquam Consequat
+                                    p 1 x $500
+                            .row
+                                .col-xs-5
+                                    img(src="images/cart-2.jpg")
+                                .col-xs-7
+                                    p Aliquam Consequat
+                                    p 1 x $200
+                             .row
+                                .col-xs-6
+                                    p Sub-Total
+                                    p Eco Tax (-2.00)
+                                    p VAT (20%)
+                                .col-xs-6.pull-right.t-resaltado
+                                    p $700
+                                    p $7.00
+                                    p $40.00
+            #carrusel-2
+                .contenedor
+                    .row.portada2
+                        .col-sm-6
+                            img.img-responsive(src="images/banner1.jpg" class="pull-right")
+                        .col-sm-6
+                            img.img-responsive(src="images/banner2.jpg" class="pull-left")
+                    .row.menu-segundo.espaciado1
+                        ul.list-menu.list-unstyle.list-inline.text-center.menu-segundo
+                            li
+                                i.fa.fa-angle-left
+                            li
+                                a(href="") LATEST
+                            li
+                                a(href="") BESTSELLER
+                            li
+                                a(href="") SALE
+                            li
+                                i.fa.fa-angle-right
+                    .row.espaciado1
+                        ul.list-menu.list-unstyle.list-inline.text-center
+                            li
+                                .l-productos.text-center.borde
+                                    img.img-responsive(src="images/a1.jpg")
+                                    p Deliver Wide
+                                    span
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star-o
+                                        i.fa.fa-star-o
+                                    p $ 218.00
+                            li
+                                .l-productos.text-center.borde
+                                    img.img-responsive(src="images/b1.jpg")
+                                    p Deliver Wide
+                                    span
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star-o
+                                        i.fa.fa-star-o
+                                    p $ 218.00
+                            li
+                                .l-productos.text-center.borde
+                                    img.img-responsive(src="images/c1.jpg")
+                                    p Deliver Wide
+                                    span
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star-o
+                                        i.fa.fa-star-o
+                                    p $ 218.00
+                            li
+                                .l-productos.text-center.borde
+                                    img.img-responsive(src="images/d1.jpg")
+                                    p Deliver Wide
+                                    span
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star-o
+                                        i.fa.fa-star-o
+                                    p $ 218.00
+            #clientes
+                .contenedor
+                    .row.espaciado1
+                        ul.list-menu.list-unstyle.list-inline.text-center
+                            li
+                                img.img-responsive(src="images/client1.jpg")
+                            li
+                                img.img-responsive(src="images/client2.jpg")
+                            li
+                                img.img-responsive(src="images/client3.jpg")
+                            li
+                                img.img-responsive(src="images/client4.jpg")
+                            li
+                                img.img-responsive(src="images/client5.jpg")
+                            li
+                                img.img-responsive(src="images/client6.jpg")
+            #carrusel-3
+                .contenedor
+                    .row.espaciado1
+                        ul.list-menu.list-unstyle.list-inline.text-center.menu-segundo
+                            li
+                                i.fa.fa-angle-left
+                            li
+                                a(href="") CLOTHING
+                            li
+                                a(href="") EQUIPMENTS
+                            li
+                                a(href="") JEWELLERY
+                            li
+                                i.fa.fa-angle-right
+                    .row
+                        ul.list-menu.list-unstyle.list-inline.text-center
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/a2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/d2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/g2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/a2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/d2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+                            li
+                                .compra
+                                    .col-md-6.thumbnail
+                                        img(src="images/g2.jpg")
+                                    .col-md-6
+                                        p Deliver Wide
+                                        p $242.00  $218.00
+                                        span
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                        button.btn.btn-default
+                                            i.fa.fa-shopping-csrt ADD TO CART
+            #carrusel-4
+                .contenedor
+                    .row
+                        ul.list-menu.list-unstyle.list-inline.text-center.menu-segundo
+                            li
+                                i.fa.fa-angle-left
+                            li
+                                a(href="") BLOG
+                            li
+                                i.fa.fa-angle-right
+                    .row
+                        ul.list-menu.list-unstyle.list-inline.text-center
+                            li
+                                .articulo
+
+                                    img.img-responsive(src="images/blog2.jpg")
+                                    h5 
+                                        strong THE SAMPLE HEADING TITLE
+                                    p 27/11/2015
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                    a.t-resaltado Read more...
+                            li
+                                .articulo
+                                    img.img-responsive(src="images/blog1.jpg")
+                                    h5 
+                                        strong THE SAMPLE HEADING TITLE
+                                    p 27/11/2015
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                    a.t-resaltado Read more...
+                            li
+                                .articulo
+                                    img.img-responsive(src="images/blog2.jpg")
+                                    h5 
+                                        strong THE SAMPLE HEADING TITLE
+                                    p 27/11/2015
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                    a.t-resaltado Read more...
+                            li
+                                .articulo
+                                    img.img-responsive(src="images/blog3.jpg")
+                                    h5 
+                                        strong THE SAMPLE HEADING TITLE
+                                    p 27/11/2015
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+                                    a.t-resaltado Read more...
+            #carrusel-5
+                .contenedor
+                    ul.list-menu.list-unstyle.list-inline.text-center
+                        li
+                            .row.ordenes.borde
+                                .col-xs-3
+                                    br
+                                    i.fa.fa-phone-square.enlinea.tam-1
+                                .col-xs-9
+                                    h5.enlinea ORDER ONLINE NOW
+                                    p.enlinea Call Us:(0123)56 789
+                        li
+                            .row.ordenes.borde
+                                .col-xs-3
+                                    br
+                                    i.fa.fa-plane.enlinea.tam-1
+                                .col-xs-9
+                                    h5.enlinea ORDER ONLINE NOW
+                                    p.enlinea Call Us:(0123)56 789
+                        li
+                            .row.ordenes.borde
+                                .col-xs-3
+                                    br
+                                    i.fa.fa-money.enlinea.tam-1
+                                .col-xs-9
+                                    h5.enlinea ORDER ONLINE NOW
+                                    p.enlinea Call Us:(0123)56 789
+            #contact
+                .row
+                    .col-md-3
+                        h4 ACCESORIES
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris.
+                        .row
+                            .col-xs-2
+                                i.fa.fa-facebook
+                            .col-xs-2
+                                i.fa.fa-twitter
+                            .col-xs-2
+                                i.fa.fa-instagram
+                            .col-xs-2
+                                i.fa.fa-skype
+                            .col-xs-2
+                                i.fa.fa-twitter   
+                    .col-md-2
+                        h4 MY ACCOUNT
+                            ul.list-menu.list-unstyle.list-inline.text-center
+                            li.fa.fa-caret-right
+                                a(href="") My Account
+                            li.fa.fa-caret-right
+                                a(href="") Order History
+                            li.fa.fa-caret-right
+                                a(href="") Wish List
+                            li.fa.fa-caret-right
+                                a(href="") Newsletter
+                    .col-md-2
+                        h4 INFORMATION
+                            ul.list-menu.list-unstyle.list-inline.text-center
+                            li.fa.fa-caret-right
+                                a(href="") About Us
+                            li.fa.fa-caret-right
+                                a(href="") Delivery Information
+                            li.fa.fa-caret-right
+                                a(href="") Privacy Policy
+                            li.fa.fa-caret-right
+                                a(href="") Terms & Conditions
+                    .col-md-2
+                        h4 EXTRAS
+                            ul.list-menu.list-unstyle.list-inline.text-center
+                            li.fa.fa-caret-right
+                                a(href="") Brands
+                            li.fa.fa-caret-right
+                                a(href="") Gift Vouchers
+                            li.fa.fa-caret-right
+                                a(href="") Affiliates
+                            li.fa.fa-caret-right
+                                a(href="") Specials
+                    .col-md-3
+                        h4 ABOUT US
+                        .row
+                            .col-md-2
+                                i.fa.fa-phone
+                            .col-md-10
+                                p 8901 Marmora Road, Glasgow DO4 89 GR, New York
+                        .row
+                            .col-md-2
+                                i.fa.fa-phone
+                            .col-md-10
+                                p (0123)456789 (0987) 654321
+                        .row
+                            .col-md-2
+                                i.fa.fa-phone
+                            .col-md-10
+                                p admin@bootexperts.com
+            #footer
+                .row
+                    .col-md-9
+                        p Copyright © 2015 BootExperts All rights reserved.
+                    .col-md-3
+                        img(src="images/payment.png")
