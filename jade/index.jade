@@ -1,69 +1,9 @@
 doctype html
 html(lang="en")
-    head
-        title Fashion Accesories
-        meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        link(rel="stylesheet", href="css/bootstrap.min.css")
-        link(rel="stylesheet", href="css/font-awesome.min.css")
-
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto" type="text/css")
-
-        link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
-        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
-        link(rel="stylesheet", href="css/main.css")
-    
-        script(src="js/jquery-1.12.3.min.js")
-        script(src="js/bootstrap.min.js")
+    include head.jade
     body
         .container
-            #menu
-                .contenedor
-                    .row.espaciado1
-                        .col-sm-6.pull-left
-                            h5 Default Welcome Msg!
-                        .col-sm-6
-                            ul.list-menu.list-unstyle.list-inline.pull-right
-                                li
-                                    img(src="images/flag1.png")
-                                    a(href="") Languaje
-                                    i.fa.fa-caret-down
-                                li
-                                    i.fa.fa-usd
-                                    a(href="") Currency
-                                    i.fa.fa-caret-down
-                                li
-                                    i.fa.fa-user
-                                    a(href="") My Account
-                                    i.fa.fa-caret-down
-            #titulo
-                .contenedor
-                    .row.espaciado2.text-center
-                        .col-md-4.espaciado1
-                            .time
-                                i.fa.fa-clock-o.tam-1.enlinea
-                                .enlinea
-                                    p OPENING TIME
-                                    p 9.00 AM - 10.00 PM
-                        .col-md-4
-                            img(src="images/logo.png" class="espaciado1")
-                         .col-md-4.espaciado1
-                            .entrada.borde.pull.right
-                                input(type="text" id="buscar" placeholder="Search")
-                                i.fa.fa-search
-            #submenu
-                .contenedor
-                    .row
-                        .col-sm-9
-                            ul.list-menu.list-unstyle.list-inline
-                                li
-                                    a(href="") HOME
-                                li
-                                     a(href="") CONTACT-US
-                        .col-sm-3.pull-right
-                            .shopping.pull-right
-                                p.fa.fa-shopping-cart.tam-0   My Cart
-                                p 2 item(s) - $244.00 
+            include encabezado.jade
             #carrusel
                 .row.portada
                     .contenedor
@@ -348,85 +288,5 @@ html(lang="en")
                                 .col-xs-9
                                     h5.enlinea ORDER ONLINE NOW
                                     p.enlinea Call Us:(0123)56 789
-            #contacto
-                .contenedor
-                    .row
-                        .col-md-3
-                            h4 
-                                span ACCESORIES
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris.
-                            .row
-                                .col-xs-2
-                                    i.fa.fa-facebook
-                                .col-xs-2
-                                    i.fa.fa-twitter
-                                .col-xs-2
-                                    i.fa.fa-instagram
-                                .col-xs-2
-                                    i.fa.fa-skype
-                                .col-xs-2
-                                    i.fa.fa-twitter   
-                        .col-md-2
-                            h4 
-                                span MY ACCOUNT
-                                ul.list-unstyle
-                                    li.fa.fa-caret-right
-                                        a(href="") My Account
-                                    li.fa.fa-caret-right
-                                        a(href="") Order History
-                                    li.fa.fa-caret-right
-                                        a(href="") Wish List
-                                    li.fa.fa-caret-right
-                                        a(href="") Newsletter
-                        .col-md-2
-                            h4 
-                                span INFORMATION
-                                ul.list-unstyle
-                                    li.fa.fa-caret-right
-                                        a(href="") About Us
-                                    li.fa.fa-caret-right
-                                        a(href="") Delivery Information
-                                    li.fa.fa-caret-right
-                                        a(href="") Privacy Policy
-                                    li.fa.fa-caret-right
-                                        a(href="") Terms & Conditions
-                        .col-md-2
-                            h4 
-                                span EXTRAS
-                                ul.list-unstyle
-                                    li.fa.fa-caret-right
-                                        a(href="") Brands
-                                    li.fa.fa-caret-right
-                                        a(href="") Gift Vouchers
-                                    li.fa.fa-caret-right
-                                        a(href="") Affiliates
-                                    li.fa.fa-caret-right
-                                        a(href="") Specials
-                        .col-md-3
-                            h4 
-                                span ABOUT US
-                            .row
-                                .col-md-2
-                                    i.fa.fa-phone
-                                .col-md-10
-                                    p   8901 Marmora Road, Glasgow DO4 89 GR, New York
-                            .row
-                                .col-md-2
-                                    i.fa.fa-phone
-                                .col-md-10
-                                    p   (0123)456789 (0987) 654321
-                            .row
-                                .col-md-2
-                                    i.fa.fa-phone
-                                .col-md-10
-                                    p   @bootexperts.com
-            #footer
-                .container
-                    .row.espaciado1
-                        .col-md-9
-                            p Copyright © 2015 
-                                span.t-resaltado BootExperts All rights reserved.
-                        .col-md-3.pull-right
-                            img(src="images/payment.png")
+            include pie.jade
+

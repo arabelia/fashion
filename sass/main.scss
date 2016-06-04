@@ -55,7 +55,7 @@ i{padding:1px;}
 	}
 	a{padding:1em; color:#111;}
 	a:hover{background-color:#DD4E4E; color:#fff;}
-	.shopping{ text-align:center; margin-right:-0.5em; width:150px; height:50px; background-color:$color-fuente; color:#fff;}
+	.shopping{ text-align:center; margin-right:-0.5em; width:150px; height:50px; background-color:#1C1818; color:#fff;}
 }
 #carrusel{
 	.ofertas{
@@ -115,16 +115,57 @@ i{padding:1px;}
 		i{ padding-right:2px; border-right: 1px solid $color-fondo;}
 	}
 }
-#contacto{
-	background-color:$color-fondo;
-	p{font-size:14px;}
-	a{font-size:14px;}
-	span {color: #241E1E;}
-}
 #footer{
-	background-color:#564D55;
-	p{color:#fff;}
+	background-color:$color-fondo;
+	p{font-size:12px;}
+	a{font-size:12px;}
+	h5{ font-weight:bold;}
+	.sociales{margin: auto; width:25px; height:25px; margin:0.2em; background-color:#fff;}
+	.circle{width:25px; height:25px; background-color:#fff; border-radius:15px;}
 }
+#pie-pag{
+		font-size:10px;
+		background-color:#564D55;
+		p{color:#fff;}
+}
+
+#contactanos{
+	vertical-align: middle;
+	color: #fff;
+	background-image:url(../images/blog3.jpg);
+	background-size:cover;
+	h1{
+		background-color: #DD4E4E;
+		font-size: 30px;
+		padding: 0.4em;
+		margin: 2em auto;
+	}
+	.info{
+		margin-top: 0.5em;
+		p{
+			padding:0.5em 1em;
+		}
+	}
+	.capa {
+  	background-color: rgba(226, 202, 213, 0.2);
+ }
+}
+
+#contacto-info{
+	padding: 0 10em;
+	.row{
+		padding: 1em 0;
+	}
+	input{
+		background: $color-fondo;
+	}
+	button{
+		background-color: #474450;
+		padding:1em;
+		color:#fff;
+	}
+}
+
 @media (max-width: 768px) {
   	#titulo{
   		text-align: center;
@@ -134,5 +175,25 @@ i{padding:1px;}
 		ul{margin: 1em 0;}
 	}
 	#carrusel{
+		.ofertas{width: 220px;padding:0.5em; margin:0.4em;}
+	}
+	#carrusel-2{
+		.portada2{
+			img{margin:auto;}
+		}
+	}
+	#clientes{
+		li{padding:0.3em;}
+		img{max-width: 100px;}
+	}
+	#carrusel-3{
+		.compra{width: 220px;}
+	}
+	#carrusel-5{
+		.ordenes{width: 220px;}
+	}
+	#footer{
+		text-align:center;
+		img{margin:auto;}
 	}
 }
