@@ -2,6 +2,7 @@ $fuente:"Roboto", sans-serif;
 $color-fondo:#E7E7E7;
 $color-fondo-claro:#F6F6F6;
 $color-fuente:#818181;
+*{outline: 1px solid rgba(0,0,125,0.5)}
 
 body{
 	color:$color-fuente;
@@ -13,7 +14,7 @@ a{text-decoration: none; color:$color-fuente;}
 a:hover{text-decoration:none;}
 i{padding:1px;}
 
-.contenedor{width:80%; margin:auto;}
+.contenedor{width:86%; margin:auto;}
 .espaciado1{
 	padding:1em 0;
 }
@@ -46,7 +47,7 @@ i{padding:1px;}
 	background-color:#fff;
 	p{margin: -0.3em 0;}
 	input{border:none;}
-	.entrada{width:200px;}
+
 }
 #submenu{
 	background-color: $color_fondo;
@@ -152,13 +153,11 @@ i{padding:1px;}
 }
 
 #contacto-info{
-	padding: 0 10em;
-	.row{
-		padding: 1em 0;
-	}
 	input{
 		background: $color-fondo;
+		margin:0.5em;
 	}
+	.mensaje{input:last-of-type{height:20px;}}
 	button{
 		background-color: #474450;
 		padding:1em;

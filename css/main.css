@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid rgba(0, 0, 125, 0.5);
+}
+
 body {
   color: #818181;
 }
@@ -20,7 +24,7 @@ i {
 }
 
 .contenedor {
-  width: 80%;
+  width: 86%;
   margin: auto;
 }
 
@@ -86,10 +90,6 @@ i {
 
 #titulo input {
   border: none;
-}
-
-#titulo .entrada {
-  width: 200px;
 }
 
 #submenu {
@@ -281,16 +281,13 @@ i {
   background-color: rgba(226, 202, 213, 0.2);
 }
 
-#contacto-info {
-  padding: 0 10em;
-}
-
-#contacto-info .row {
-  padding: 1em 0;
-}
-
 #contacto-info input {
   background: #E7E7E7;
+  margin: 0.5em;
+}
+
+#contacto-info .mensaje input:last-of-type {
+  height: 20px;
 }
 
 #contacto-info button {
